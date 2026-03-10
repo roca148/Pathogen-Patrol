@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="description" content="Immune Defense Arcade, un prototipo de juego web educativo de inmunología para navegador y celular.">
+  <title>Immune Defense - Arcade (Móvil)</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="pill"><b>Immune Defense - Arcade</b> (móvil)</div>
+      <div class="pill">Táctil: <b>&larr;</b> <b>&rarr;</b> <b>DISPARAR</b> · Pausa: <b>&#9208;</b> · Doble toque en el canvas = pantalla completa</div>
+    </div>
+
+    <div class="stage">
+      <canvas id="c" aria-label="Área principal del juego"></canvas>
+    </div>
+
+    <div class="touchbar">
+      <button class="btn" id="btnLeft" type="button" aria-label="Mover a la izquierda">&#11013;</button>
+      <button class="btn" id="btnRight" type="button" aria-label="Mover a la derecha">&#10145;</button>
+      <button class="btn" id="btnFire" type="button">DISPARAR</button>
+      <button class="btn" id="btnPause" type="button" aria-label="Pausar">&#9208;</button>
+    </div>
+
+    <div class="hint">
+      Tip: cada <b>30s</b> aparece un quiz. Si aciertas, ganas un power-up. También puedes <b>arrastrar el dedo</b> en el canvas para mover la célula.
+    </div>
+  </div>
+
+  <script src="./game.js"></script>
+</body>
+</html>
